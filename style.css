@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato & display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Fundo da Tela*/
+
+html{
+    width:100vw;
+    height:100vh;
+    font-size:62.5% ;
+    font-family: 'Lato' sans-serif;
+}
+
+body{
+    
+	background:linear-gradient(rgba(17,17,17,0.2), rgba(20,20,20,0.3)),url(img0.jpg)no-repeat; 
+    background-position: center center;
+    background-size:cover;
+    background-position-y:25px; 
+}
+
+/*Menu  header navbar*/
+
+header{
+    width: 100%;
+    height: 7vh;
+    background:rgb(194, 194, 29);
+    background: #202020;
+}
+
+ .menu-content{
+     text-transform: uppercase;
+     height:100%;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 1.0rem;
+}
+
+.logo {
+   right: 20rem;
+   font-size: 2.1rem;
+   letter-spacing: 0.4rem;
+   cursor: pointer;
+   color: rgb(251, 255, 0);
+   text-shadow: 0 0 10px white;
+
+}
+/*itens menu*/
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer; 
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color:#ffff;
+    padding: 1.5rem;
+    transition:2ms ease-in;
+    position:relative;
+}
+
+.menu-content .list-itens a:before{
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:0px;
+    height:1px;
+    background-color: rgb(251, 255, 0);
+    transition: all 1.5s ease;
+    cursor: pointer;
+}
+
+.menu-content .list-itens a:hover:before{
+width:100%;
+}
+
+.login{
+    font-size: 1.8rem;
+    width:80px;
+    height: 65px;
+    left: 106rem;
+    cursor: pointer;
+    border:1px solid #fff;
+    color:#ffff;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;         
+}
+
+.login:hover{
+    color:rgb(251, 255, 0)
+}
+
+.login:before{
+    content:'';
+    border-radius: 20px;
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color:rgb(61, 61, 61);
+    z-index:-1;
+    transition: 1s;
+}
+
+.login:hover:before{
+    width: 100%;
+}
+
+/*centro - conteudo principal*/
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Textos conteudos principais*/
+.prime{
+    color:#fff;
+    width:850px;
+    font-size: 5rem;
+    margin-bottom:2rem;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.seton-test{
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color:white;
+    text-transform: uppercase;
+
+}
+/*botões*/
+.btn{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.btn button{
+    width:250px;
+    height: 60px;
+    cursor: pointer;
+    border:1px solid #fff;
+    color:#ffff;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;  
+}
+
+.btn button:hover{
+    color:rgb(251, 255, 0)
+}
+
+.btn button:before{
+    content:'';
+    border-radius: 20px;
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color:rgb(61, 61, 61);
+    z-index:-1;
+    transition: 1s;
+}
+
+.btn button:hover:before{
+    width: 100%;
+}
+
